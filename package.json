@@ -1,0 +1,19 @@
+{
+  "name": "day-1384",
+  "version": "1.0.0",
+  "description": "Day 1384 Figma Design to Bootstrap v5 with SASS",
+  "main": "index.js",
+  "scripts": {
+    "day1384": "sass --watch scss:assets/css"
+  },
+  "keywords": [],
+  "author": "Samet Samyeli",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.32.12"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0",
+    "normalize.css": "^8.0.1"
+  }
+}
