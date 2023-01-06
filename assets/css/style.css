@@ -10903,5 +10903,33 @@ body {
 .market-logos .active {
   border: 0.063rem solid #FF6A95;
 }
+.market-info {
+  padding-top: 1.25rem;
+}
+.market-designs {
+  padding-top: 2.5rem;
+}
+.market-designs .card {
+  border: none !important;
+}
+.market-designs__author p {
+  padding-left: 0.875rem;
+}
+.market-designs__static img {
+  margin-right: 0.313rem;
+}
+.market-designs__static span {
+  padding-right: 1.25rem;
+}
+.market-designs__static span:last-child {
+  padding-right: 0;
+}
+.market-designs__brand {
+  background-color: #FCFCFF;
+  border: 0.063rem solid #EFEFFF;
+  border-radius: 50%;
+  padding: 1rem;
+  margin: 1.875rem 0 0 1.875rem;
+}
 
 /*# sourceMappingURL=style.css.map */

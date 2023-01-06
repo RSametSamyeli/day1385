@@ -1,5 +1,5 @@
-@use '../custom'as *;
-@use '../components/mixins'as *;
+@use '../custom' as *;
+@use '../components/mixins' as *;
 
 .market {
     padding-top: 2.5rem;
@@ -54,6 +54,46 @@
 
         .active {
             border: 0.063rem solid $pink;
+        }
+    }
+
+    &-info {
+        padding-top: 1.25rem;
+    }
+
+    &-designs {
+        padding-top: 2.5rem;
+
+        .card {
+            border: none !important;
+        }
+
+        &__author {
+            p {
+                padding-left: 0.875rem;
+            }
+        }
+
+        &__static {
+            img {
+                margin-right: 0.313rem;
+            }
+
+            span {
+                padding-right: 1.25rem;
+            }
+
+            span:last-child {
+                padding-right: 0;
+            }
+        }
+
+        &__brand {
+            background-color: $gray-light;
+            border: 0.063rem solid $border-color;
+            border-radius: 50%;
+            padding: 1rem;
+            margin: 1.875rem 0 0 1.875rem;
         }
     }
 }
