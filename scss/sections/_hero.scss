@@ -3,31 +3,75 @@
 
 .hero {
     background-color: $gray-light;
-    padding-top: 30px;
+    padding-top: 1.875rem;
 
-    &__btn {
-        padding: 8px 17px 8px 17px;
-        border-radius: 10px;
+    &-btn {
+        padding: 0.5rem 1.063rem 0.5rem 1.063rem;
+        border-radius: 0.625rem;
         color: $pink;
         text-decoration: none;
         background-color: $white;
         font-weight: 600;
     }
 
-    &__content {
-        padding-top: 20px;
-        max-width: 580px;
+    &-content {
+        padding-top: 1.25rem;
+        max-width: 36.25rem;
     }
 
-    &__title {
+    &-title {
         font-weight: 700;
         font-size: $hero-title;
         line-height: $hero-title-line-height;
     }
 
-    &__text {
+    &-text {
         font-weight: 400;
         font-size: $hero-text;
         line-height: $hero-text-line-height;
+    }
+
+    .searchbar {
+        background-color: white;
+        align-items: center;
+        width: 100%;
+        padding: 0.625rem;
+        border: 1 px solid $border-color;
+        box-shadow: 0rem 1rem 2.188rem -0.938rem rgba(2, 5, 132, 0.15);
+        border-radius: 0.625rem;
+        font-family: $font-secondary;
+        margin-top: 2.375rem;
+        margin-bottom: 7.625rem;
+
+        &-left {
+            align-items: center;
+            padding: 0.688rem 0.938rem 0.688rem 0.938rem;
+
+            span{
+                font-weight: 600;
+                font-size: 1rem;
+                line-height: 1.255rem;
+                color: $black;
+            }
+
+            .fa-chevron-down {
+                padding-left: 0.625rem;
+            }
+        }
+
+        &-right {
+            align-items: center;
+            color: $gray;
+
+            .fa-search{
+                padding-right: 0.625rem;
+                color: $gray;
+            }
+
+            input {
+                border: 0;
+                padding: 0;
+            }
+        }
     }
 }

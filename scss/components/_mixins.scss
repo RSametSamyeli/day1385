@@ -1,7 +1,8 @@
-@use '../custom'as *;
+@use '../custom' as *;
 
 // ABSOLUTE CENTER 
-@mixin absoluteCenter {
+
+.absoluteCenter {
     position: absolute;
     top: 50%;
     left: 50%;
