@@ -47,7 +47,7 @@
             align-items: center;
             padding: 0.688rem 0.938rem 0.688rem 0.938rem;
 
-            span{
+            span {
                 font-weight: 600;
                 font-size: 1rem;
                 line-height: 1.255rem;
@@ -63,9 +63,10 @@
             align-items: center;
             color: $gray;
 
-            .fa-search{
+            .fa-search {
                 padding-right: 0.625rem;
                 color: $gray;
+                opacity: 0.6;
             }
 
             input {
