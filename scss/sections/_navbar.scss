@@ -1,3 +1,29 @@
-@use '../custom' as *;
-@use '../components/mixins' as *;
+@use '../custom'as *;
+@use '../components/mixins'as *;
 
+.menu {
+  background-color: $gray-light;
+  padding: 2.5rem 3.125rem 2.5rem 3.125rem;
+}
+
+.nav-link {
+  padding: 0.625rem 0.938rem 0.625rem 0.938rem;
+}
+
+.active {
+  background-color: $navbar-active;
+  font-weight: 500;
+  color: $primary;
+  border-radius: 25px;
+}
+
+.register {
+  gap: 1rem;
+
+  &__active {
+    background-color: $primary;
+    color: $gray-light;
+    border-radius: 10px;
+    padding: 15px 30px 15px 30px;
+  }
+}

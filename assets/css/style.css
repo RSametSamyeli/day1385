@@ -340,7 +340,9 @@ select:disabled {
 button,
 [type=button],
 [type=reset],
-[type=submit],
+[type=submit] {
+  -webkit-appearance: button;
+}
 button:not(:disabled),
 [type=button]:not(:disabled),
 [type=reset]:not(:disabled),
@@ -397,6 +399,7 @@ legend + * {
 
 [type=search] {
   outline-offset: -2px;
+  -webkit-appearance: textfield;
 }
 
 /* rtl:raw:
@@ -2388,6 +2391,7 @@ textarea.form-control-lg {
   background-size: contain;
   border: 1px solid rgba(0, 0, 0, 0.25);
   appearance: none;
+  color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -10742,6 +10746,36 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.menu {
+  background-color: #FCFCFF;
+  padding: 2.5rem 3.125rem 2.5rem 3.125rem;
+}
+
+.nav-link {
+  padding: 0.625rem 0.938rem 0.625rem 0.938rem;
+}
+
+.active {
+  background-color: #F1F1FD;
+  font-weight: 500;
+  color: #202142;
+  border-radius: 25px;
+}
+
+.register {
+  gap: 1rem;
+}
+.register__active {
+  background-color: #202142;
+  color: #FCFCFF;
+  border-radius: 10px;
+  padding: 15px 30px 15px 30px;
+}
+
 .footer {
   padding-top: 1rem;
   background-color: #151414;
