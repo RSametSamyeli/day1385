@@ -16,11 +16,11 @@
 
 <body>
 
-    <header class="navbar menu d-flex justify-content-between border-bottom" style="--bs-border-opacity: .6;">
+    <header class="navbar menu d-flex justify-content-center justify-content-md-between border-bottom" style="--bs-border-opacity: .6;">
         <a href="#">
             <img class="img-fluid" src="images/logo.png" alt="Design Daily">
         </a>
-        <nav class="d-flex">
+        <nav class="d-none d-md-flex">
             <a class="nav-link active" href="#">
                 Free designs</a>
             <a class="nav-link" href="#">Licence</a>
@@ -39,28 +39,29 @@
 
     <section class="hero">
         <div class="custom-container">
-            <div class="col-md-12">
+            <div class="col-lg-12 text-center text-md-start">
                 <a href="#" class="hero-btn">Day 1384</a>
             </div>
-            <div class="col-md-12 text-center d-flex justify-content-center">
+            <div class="col-lg-12 text-center d-flex justify-content-center">
                 <div class="hero-content">
                     <h1 class="hero-title">Free UI resources for everyone</h1>
                     <p class="hero-text">The largest database of 100% free UI components and designs available in the
                         formats popular by UI designers.</p>
-                    <div class="col-md-12">
+                    <div class="col-lg-12">
                         <div class="d-flex searchbar">
-                            <div class="col-md-4">
+                            <div class="col-lg-4">
                                 <div class="searchbar-left d-flex">
                                     <span>Free designs</span>
                                     <i class="fas fa-chevron-down"></i>
                                 </div>
                             </div>
-                            <div class="col-md-8">
+                            <div class="col-lg-8">
                                 <div class="searchbar-right">
                                     <form action="post" class="form-inline">
                                         <div class="input-group d-flex align-items-center">
                                             <i class="fas fa-search fa-lg"></i>
-                                            <input type="text" class="form-control" placeholder="Search">
+                                            <input id="searchDesign" type="text" class="form-control" placeholder="Search (Figma, Sketch, Adobe etc.)">
+                                            <span id="alert" class="bg-danger"></span>
                                         </div>
                                     </form>
                                 </div>
@@ -76,16 +77,16 @@
     <!--  Market Section   -->
     <section class="market">
         <div class="custom-container">
-            <div class="col-md-12">
+            <div class="col-lg-12">
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <div class="toggle-switch d-flex">
                             <div class="active w-100">Latest</div>
                             <div class="inactive w-100">Popular</div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="market-filter d-flex justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="market-filter d-none d-md-flex justify-content-center">
                             <ul class="d-flex">
                                 <li class="active"><a href="#">All</a></li>
                                 <li><a href="#">Web</a></li>
@@ -95,7 +96,7 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <div class="market-logos d-flex justify-content-center align-items-center">
                             <a href="#"><img class="img-fluid" src="images/brand-logos.png" alt="Figma"></a>
                             <a class="active" href="#"><img class="img-fluid" src="images/brand-logos2.png"
@@ -109,9 +110,9 @@
             </div>
 
             <!--  Market Designs   -->
-            <div class="market-designs col-md-12">
-                <div class="row">
-                    <div class="col-md-4">
+            <div class="market-designs col-lg-12">
+                <div id="designs" class="row">
+                    <div class="col-lg-4">
                         <div class="card">
                             <div class="card-body position-relative">
                                 <img class="img-fluid" src="images/firstContent.png" alt="Market Card">
@@ -136,7 +137,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <div class="card">
                             <div class="card-body position-relative">
                                 <img class="img-fluid" src="images/secondContent.png" alt="Market Card">
@@ -161,7 +162,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-lg-4">
                         <div class="card">
                             <div class="card-body position-relative">
                                 <img class="img-fluid" src="images/thirdContent.png" alt="Market Card">
@@ -186,6 +187,81 @@
                         </div>
                     </div>
 
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body position-relative">
+                                <img class="img-fluid" src="images/secondContent.png" alt="Market Card">
+                                <div class="market-info d-flex justify-content-between">
+                                    <div class="market-designs__author d-flex align-items-center">
+                                        <img class="img-fluid" src="images/designer.png" alt="John Doe">
+                                        <p class="card-text pl-2 ml-2 pr-2">by <strong>Jenny Molla</strong></p>
+                                    </div>
+                                    <div class="market-designs__static d-flex align-items-center">
+                                        <img src="images/code.png" width="26" height="26" alt="Code Icon">
+                                        <span>25</span>
+                                        <img src="images/appreciate.png" width="26" height="26" alt="Code Icon">
+                                        <span>25</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="market-designs__brand position-absolute justify-content-start">
+                                <a href="#">
+                                    <img class="img-fluid" src="images/brand-logos5.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body position-relative">
+                                <img class="img-fluid" src="images/thirdContent.png" alt="Market Card">
+                                <div class="market-info d-flex justify-content-between">
+                                    <div class="market-designs__author d-flex align-items-center">
+                                        <img class="img-fluid" src="images/designer.png" alt="John Doe">
+                                        <p class="card-text pl-2 ml-2 pr-2">by <strong>Jenny Molla</strong></p>
+                                    </div>
+                                    <div class="market-designs__static d-flex align-items-center">
+                                        <img src="images/code.png" width="26" height="26" alt="Code Icon">
+                                        <span>25</span>
+                                        <img src="images/appreciate.png" width="26" height="26" alt="Code Icon">
+                                        <span>25</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="market-designs__brand position-absolute justify-content-start">
+                                <a href="#">
+                                    <img class="img-fluid" src="images/brand-logos2.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body position-relative">
+                                <img class="img-fluid" src="images/firstContent.png" alt="Market Card">
+                                <div class="market-info d-flex justify-content-between">
+                                    <div class="market-designs__author d-flex align-items-center">
+                                        <img class="img-fluid" src="images/designer.png" alt="John Doe">
+                                        <p class="card-text pl-2 ml-2 pr-2">by <strong>Jenny Molla</strong></p>
+                                    </div>
+                                    <div class="market-designs__static d-flex align-items-center">
+                                        <img src="images/code.png" width="26" height="26" alt="Code Icon">
+                                        <span>25</span>
+                                        <img src="images/appreciate.png" width="26" height="26" alt="Code Icon">
+                                        <span>25</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="market-designs__brand position-absolute justify-content-start">
+                                <a href="#">
+                                    <img class="img-fluid" src="images/brand-logos4.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <!--  Market Designs End  -->
@@ -195,6 +271,9 @@
     <!--  Market End  -->
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/design.js"></script>
+    <script src="assets/js/ui.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 
 </html>
