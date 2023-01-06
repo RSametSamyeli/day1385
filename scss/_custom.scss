@@ -1,4 +1,5 @@
-// MY THEME COLORS 
+// MY THEME COLORS
+$white:  #FFFFFF;
 $gray:  #202142;
 $gray-light:  #FCFCFF;
 $pink:    #FF6A95;
@@ -7,5 +8,15 @@ $footer: #151414;
 
 $primary:       $gray;
 $secondary:     $gray-light;
+
+// HERO SECTION FONT SIZES
+
+$hero-title: 1.375rem;
+$hero-title-line-height: 2.063rem;
+$hero-text: 18px;
+$hero-text-line-height: 1.688rem;
+
+
+
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
