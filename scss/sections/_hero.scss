@@ -2,5 +2,32 @@
 @use '../components/mixins'as *;
 
 .hero {
+    background-color: $gray-light;
+    padding-top: 30px;
 
+    &__btn {
+        padding: 8px 17px 8px 17px;
+        border-radius: 10px;
+        color: $pink;
+        text-decoration: none;
+        background-color: $white;
+        font-weight: 600;
+    }
+
+    &__content {
+        padding-top: 20px;
+        max-width: 580px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: $hero-title;
+        line-height: $hero-title-line-height;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: $hero-text;
+        line-height: $hero-text-line-height;
+    }
 }
